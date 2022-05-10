@@ -1,1 +1,10 @@
-<h1>{{title}}</h1>
+<header>
+    <!-- Una via de Bidding -->
+    <h1>{{title}}</h1>
+    <!-- aquí pongo el componente button y uso color y text para enviarle al controlador del componente los parámetros que luego se escriben en el html del componente-->
+    <app-button
+        color="green"
+        text="Add Task"
+        (btnClick)="toggleAddTask()"
+    ></app-button>
+</header>
